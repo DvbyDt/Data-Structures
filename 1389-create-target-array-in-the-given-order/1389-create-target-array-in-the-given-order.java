@@ -29,7 +29,6 @@ class Solution {
     for (Integer integer : list) {
         nums[e++]=integer;
     }
-    return nums;
-        
+    return nums;        
     }
 }
