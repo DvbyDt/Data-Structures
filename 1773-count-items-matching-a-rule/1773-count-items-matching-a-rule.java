@@ -14,7 +14,7 @@ class Solution {
 	    //     }
 	    // return count;
         
-//          int count = 0;
+//         int count = 0;
 //         int i = 0;
 //         if (ruleKey.equals("color"))
 //             i = 1;
@@ -23,22 +23,22 @@ class Solution {
 
 //         for (List<String> item : items) {
 //             if (item.get(i).equals(ruleValue))
-//                 count++;
+//                 ++count;
 //         }
 //         return count;
         
         int count = 0;
-	        int i=0;
-	        if(ruleKey.equals("color")) {
-	        	i=1;
-	        }else if(ruleKey.contains("name")) {
-	        	i=2;
-	        }
-	        for(int j=0;j<items.size();j++) {
-	        	if(items.get(j).get(i).equals(ruleValue)) {
-	        		count++;
-	        	}
-	        }
-	        return count;
+        int i=0;
+        if(ruleKey.equals("color")) {
+        i=1;
+        }else if(ruleKey.contains("name")) {
+        i=2;
+        }
+        for(int j=0;j<items.size();j++) {
+        if(items.get(j).get(i).equals(ruleValue)) {
+        count++;
+        }
+        }
+        return count;
     }
 }
