@@ -1,8 +1,8 @@
 class Solution {
     public int[] sumZero(int n) {
         //base case
-        if(n==1){
-            return new int[1];
+        if(n==1||n==0){
+            return new int[n];
         }
         int[] arr = new int[n];
         int sum = 0;
