@@ -7,9 +7,11 @@ class Solution {
             }
             else if(i+1<command.length() && command.charAt(i)=='(' && command.charAt(i+1)==')'){
                 str=str+'o';
+                i++;
             }
             else if(i+1<command.length() && command.charAt(i)=='(' && command.charAt(i+1)=='a'){
                 str=str+"al";
+                i+=2;
             }
         }
         return str;
