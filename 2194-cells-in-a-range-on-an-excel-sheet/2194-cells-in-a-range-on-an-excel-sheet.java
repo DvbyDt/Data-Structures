@@ -9,7 +9,7 @@ class Solution {
         for(int i=(int)(s.charAt(1));i<=(int)s.charAt(4);i++){
             r++;
         }
-        int[][] arr = new int[r][c];
+        //int[][] arr = new int[r][c];
         int ascii = (int)(s.charAt(0));
         List<String> output = new ArrayList<String>();
         //Actual stroing the values
