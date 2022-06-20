@@ -21,14 +21,6 @@ class Solution {
                 arr2[temp-'0'-1] = arr1[i].substring(0,arr1[i].length()-1);
                 
             }
-         for(int i=0;i<arr2.length;i++){
-	        	//String temp = arr2[i].substring(0,arr2[i].length()-1);
-	            if(i==arr2.length-1){
-	                output+=arr2[i];
-	            }else{
-	                output+=arr2[i]+" ";
-	            }            
-	        }
-	        return output;
+         return String.join(" ",arr2);
 	    }
 }
