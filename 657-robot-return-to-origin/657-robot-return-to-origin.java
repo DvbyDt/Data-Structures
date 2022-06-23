@@ -18,8 +18,8 @@ class Solution {
         
         //Solution-2
         int[] arr = new int[26];
-        for(int i=0;i<moves.length();i++){
-            arr[moves.charAt(i) - 'A']++;
+        for(char c: moves.toCharArray()){
+            arr[c - 'A']++;
         }
         if(arr['D' - 'A']==arr['U' - 'A'] && arr['L' - 'A'] == arr['R' - 'A']){
             return true;
