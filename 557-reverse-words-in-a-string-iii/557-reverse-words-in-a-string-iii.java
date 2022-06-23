@@ -22,18 +22,33 @@ class Solution {
         // }
         // return str; 
          
-        String [] arr = str.split(" ");
-        String str1="";
-        for(int i=0;i<arr.length;i++) {
-        	String word =arr[i];
-        	for(int j= word.length()-1;j>=0;j--) {
-        		str1+=word.charAt(j);
-        	}
-            if(i!=arr.length-1){
-                str1+=" ";
-            }      	
+        // String [] arr = str.split(" ");
+        // String str1="";
+        // for(int i=0;i<arr.length;i++) {
+        // 	String word =arr[i];
+        // 	for(int j= word.length()-1;j>=0;j--) {
+        // 		str1+=word.charAt(j);
+        // 	}
+        //     if(i!=arr.length-1){
+        //         str1+=" ";
+        //     }      	
+        // }
+        // //System.out.println(str1);
+        // return str10
+//         var words = s.split(" ");
+//       var result = String.valueOf("");
+      
+//       for(var word : words)
+//         result += new StringBuilder(word).reverse().toString() + " ";
+      
+//       return result.trim();;
+        
+        String[] arr = str.split(" ");
+        //String space="";
+        String output = String.valueOf("");
+        for(String vari:arr){
+            output+= new StringBuilder(vari).reverse().toString()+" ";
         }
-        //System.out.println(str1);
-        return str1;
+        return output.trim();
     }
 }
