@@ -9,13 +9,13 @@ class Solution {
             i++;
             j++;
         }
-        while(i<word1.length()){
-            output.append(word1.charAt(i));
-            i++;
+        if(i<word1.length()){
+            output.append(word1.substring(i));
+            //i++;
         }
-        while(j<word2.length()){
-            output.append(word2.charAt(j));
-            j++;
+        if(j<word2.length()){
+            output.append(word2.substring(j));
+            //j++;
         }
         return output.toString();
     }
