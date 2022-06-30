@@ -12,8 +12,7 @@ class Solution {
                 }
                 else{
                     return false;
-                }
-                
+                }                
             }
         }
         return input.size() ==0 ? true : false;
