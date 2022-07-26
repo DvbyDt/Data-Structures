@@ -18,14 +18,25 @@ class Solution {
 		 
 // 		 return true;
         
-        //Better solution
-        boolean panagram = true;
-		 for(char c='a';c<='z';c++) {
-			 if(!sentence.contains(String.valueOf(c))) {
-				 panagram = false;
-				 break;
-			 }
-		 }
-		 return panagram;	
+		 // //Better solution
+		 // boolean panagram = true;
+		 // for(char c='a';c<='z';c++) {
+		 // if(!sentence.contains(String.valueOf(c))) {
+		 // panagram = false;
+		 // break;
+		 // }
+		 // }
+		 // return panagram;	
+        
+        //Even Better
+        if(sentence.length()<26){
+            return false;
+        }
+        for(char c='a';c<='z';c++){
+            if(sentence.indexOf(c)<0){
+                return false;
+            }
+        }
+        return true;
     }
 }
