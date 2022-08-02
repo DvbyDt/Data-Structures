@@ -8,17 +8,15 @@ class Solution {
         //     output[i] = arr.get(i);
         // }
         // return output;
-        for(int i=0;i<nums.length;i++){
-            for(int j=i+1;j<nums.length;j++){
-                if(nums[j] == target-nums[i]){
-                    return new int[]{i,j};
-                }
-            }
-        }
-        return null;
-        
-        
-    }
+    //     for(int i=0;i<nums.length;i++){
+    //         for(int j=i+1;j<nums.length;j++){
+    //             if(nums[j] == target-nums[i]){
+    //                 return new int[]{i,j};
+    //             }
+    //         }
+    //     }
+    //     return null;
+    // }
     // public ArrayList<Integer> computeSum(int[] nums,int target){
     //     ArrayList<Integer> arr = new ArrayList<Integer>();
     //     for(int i=0;i<nums.length;i++){            
@@ -33,4 +31,18 @@ class Solution {
     //     }
     //     return arr;
     // }
+    
+    //HashMap Solutions:
+        HashMap<Integer,Integer> map = new HashMap<>();
+        int[] result = new int[2];
+        for(int i=0;i<nums.length;i++){
+            if(map.containsKey(target-nums[i])){
+                result[0] = i;
+                result[1] = map.get(target-nums[i]);
+            }
+            map.put(nums[i],i);
+        }
+        
+        return result;
+    }
 }
