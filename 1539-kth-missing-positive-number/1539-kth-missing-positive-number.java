@@ -24,16 +24,16 @@ class Solution {
         
         //Approach-3:O(log n) binary search solution.
         int start=0,end = arr.length-1;
-        int closestmid = 0;
+        //int closestmid = 0;
         while(start<=end){
             int mid = start+(end-start)/2;
             if(arr[mid]-(mid+1)<k){
                 start = mid+1;
-                closestmid = mid+1;
+                //closestmid = mid+1;
             }else{
                 end = mid-1;
             }
         }
-        return k+closestmid;
+        return k+start;
     }
 }
