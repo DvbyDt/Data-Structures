@@ -8,12 +8,12 @@ class Solution {
                 return mid;
             }else if(target>nums[mid]){
                 start  = mid+1;
-                ans = start;
+                //ans = start;
             }else{
-                ans = start;
+                //ans = start;
                 end = mid-1;                
             }
         }
-        return ans;
+        return start;
     }
 }
