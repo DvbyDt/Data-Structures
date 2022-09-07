@@ -2,8 +2,9 @@ class Solution {
     public int[] findRightInterval(int[][] intervals) {
         //Applying simple binary search to solve the problem
         int[] ans = new int[intervals.length];
+        int idx = -1;
         for(int i=0;i<intervals.length;i++){
-            int idx = binarySearch(intervals,intervals[i][1]);
+            idx = binarySearch(intervals,intervals[i][1]);
             ans[i] = idx;
         }
         return ans;
