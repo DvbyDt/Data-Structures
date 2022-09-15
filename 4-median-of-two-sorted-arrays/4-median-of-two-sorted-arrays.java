@@ -37,16 +37,22 @@ class Solution {
         }
         
         //Finding Median
-        double med=0.0;
-        //If even:
-        if((arr.length%2)==0){
-            int n1 = arr.length/2;//2
-            int n2 = (arr.length/2)+1;//3
-            med = ((double)(arr[n1-1]+arr[n2-1]))/2;//
-        }else{//If odd:
-            int n1 = (arr.length+1)/2;
-            med = (double)arr[n1-1];
+        // double med=0.0;
+        // //If even:
+        // if((arr.length%2)==0){
+        //     int n1 = arr.length/2;//2
+        //     int n2 = (arr.length/2)+1;//3
+        //     med = ((double)(arr[n1-1]+arr[n2-1]))/2;//
+        // }else{//If odd:
+        //     int n1 = (arr.length+1)/2;
+        //     med = (double)arr[n1-1];
+        // }
+        // return med;
+        if(arr.length%2!=0){
+            return arr[(int)arr.length/2];
         }
-        return med;
+        else{
+            return (double)(arr[arr.length/2]+arr[(arr.length/2)-1])/2;
+        }
     }
 }
