@@ -5,7 +5,7 @@ class Solution {
         List<List<Integer>> minDiff = new ArrayList<>();
         for(int i=0;i<arr.length;i++){
             int j = i+1;
-            List<Integer> ans = new ArrayList<>();
+            //List<Integer> ans = new ArrayList<>();//This is not required jst use Arrays.asList
             if(j<arr.length){
                 if(arr[j]-arr[i]<=min){
                     if(arr[j]-arr[i]<min){
@@ -13,9 +13,9 @@ class Solution {
                     minDiff.clear();//To clear the previous record of min value as the first value
                     //will be entered regardless
                     }                    
-                    ans.add(arr[i]);
-                    ans.add(arr[j]);
-                    minDiff.add(ans);
+                    // ans.add(arr[i]);
+                    // ans.add(arr[j]);
+                    minDiff.add(Arrays.asList(arr[i],arr[j]));
                 }
             
             }
