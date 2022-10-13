@@ -1,7 +1,7 @@
 class Solution {
     public int eraseOverlapIntervals(int[][] intervals) {
 //         //Base case
-//         if(intervals.length==0 || intervals[0].length==0){
+//         if(intervals.length==0){
 //             return 0;
 //         }
         
