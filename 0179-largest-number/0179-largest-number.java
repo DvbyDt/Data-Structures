@@ -3,7 +3,7 @@ class Solution {
         //1. Take a string array put everything in it.
         String[] arr = new String[nums.length];
         for(int i=0;i<arr.length;i++){
-            arr[i] = nums[i]+"";
+            arr[i] = Integer.toString(nums[i]);
         }
         //2. Now sort them 
         Arrays.sort(arr,(a,b)->{
