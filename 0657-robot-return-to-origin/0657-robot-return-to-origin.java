@@ -19,8 +19,8 @@ class Solution {
         
         //Approach-2: Use the aplahbets and return the answer
         int [] arr = new int[26];
-        char[] ch = moves.toCharArray();
-        for(char c:ch){
+        //char[] ch = moves.toCharArray();
+        for(char c:moves.toCharArray()){
             arr[c-'A']++;
         }
         
