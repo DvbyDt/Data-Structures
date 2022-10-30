@@ -35,8 +35,7 @@ class Solution {
         while(i<m && j<n){            
             char c1 = name.charAt(i),c2 = typed.charAt(j);
             //Give false if not equal
-            if(c1!=c2){return false;}
-            
+            if(c1!=c2){return false;}            
             int count1=0,count2=0;
             //Now searching both the strings
             while(i<m && c1==name.charAt(i)){
